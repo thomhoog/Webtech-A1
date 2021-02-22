@@ -108,3 +108,43 @@ footer a:hover{
 footer h2{
     color:#838383;
 }
+
+html.history article{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 45px 0px;
+    display: flex;
+    min-height: 84vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html.history p {
+    text-align: justify;
+}
+img {
+    width: 250px;
+    height: auto;
+  }
+
+img#img {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+html.history h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+  
+  @media only screen and (max-width: 1080px) {
+    html.history article{
+        padding: 45px 45px;
+    }
+}
