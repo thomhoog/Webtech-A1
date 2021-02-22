@@ -177,3 +177,32 @@ img#img {
         padding: 45px 45px;
     }
 }
+
+
+.gallerywrap{
+    background-color: #f3f3f3;
+}
+
+.gallery{
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+
+.gallery div{
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.galleryimg{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    padding: 4px;
+}
