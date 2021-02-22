@@ -108,3 +108,66 @@ footer a:hover{
 footer h2{
     color:#838383;
 }
+
+aside{
+    margin: 10px;
+    padding-left: 10px;
+    border-left: 2px dotted #e34f26;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+    aside{
+        float: right;
+        width: 35%;
+        margin: 0px 0px 10px 10px;
+        padding-left: 10px;
+        border-left: 2px dotted #e34f26;
+        font-style: italic;
+    }
+}
+
+article{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 45px 0px;
+    display: flex;
+    min-height: 84vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article a{
+    text-decoration: none;
+}
+
+article a:hover{
+    text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+  }
+
+img#img {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1080px) {
+    html.history article{
+        padding: 45px 45px;
+    }
+}
