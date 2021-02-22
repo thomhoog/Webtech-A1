@@ -19,16 +19,15 @@ header{
 
 .textlogo{
     color: #ffffff;
-    margin-left: 25px;
+    margin-left: 16px;
 }
 
 .logo{
-    height: 70px;
-    width: 70px;
-    margin-top: 30px;
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
     margin-left: 10px;
 }
-
 
 nav{
     align-items: center;
@@ -124,6 +123,13 @@ aside{
         padding-left: 10px;
         border-left: 2px dotted #e34f26;
         font-style: italic;
+    }
+
+    .logo{
+        height: 70px;
+        width: 70px;
+        margin-top: 30px;
+        margin-left: 0px;
     }
 }
 
