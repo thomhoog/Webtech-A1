@@ -113,6 +113,7 @@ aside{
     padding-left: 10px;
     border-left: 2px dotted #e34f26;
     font-style: italic;
+    text-align: justify;
 }
 
 @media only screen and (min-width: 768px) {
@@ -131,15 +132,26 @@ aside{
         margin-top: 30px;
         margin-left: 0px;
     }
+
+    .historyimg{
+        float: right;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .historyimg{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 article{
-    max-width: 1080px;
+    max-width: 1170px;
     width: 100%;
     margin: 0px auto;
     padding: 45px 0px;
     display: flex;
-    min-height: 84vh;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -152,6 +164,10 @@ article a:hover{
     text-decoration: underline;
 }
 
+.notgallery{
+    padding: 45px 45px;
+}
+
 p{
     text-align: justify;
     margin-bottom: 15px;
@@ -161,23 +177,21 @@ h2{
     margin-bottom: 15px;
 }
 
-img {
+.historyimg{
     width: 250px;
     height: auto;
-  }
-
-img#img {
-    float: right;
-    margin-left: 15px;
     margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 1080px) {
-    html.history article{
-        padding: 45px 45px;
-    }
+ol{
+    margin-left: 15px;
 }
 
+sup{
+    vertical-align: baseline;
+    top: -0.4em;
+    position: relative;
+}
 
 .gallerywrap{
     background-color: #f3f3f3;
