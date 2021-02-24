@@ -185,11 +185,22 @@ h2{
 
 ol{
     margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+ol.ref-list{
+    margin-bottom: 0px;
 }
 
 sup{
     vertical-align: baseline;
     top: -0.4em;
+    position: relative;
+}
+
+sub{
+    vertical-align: baseline;
+    top: 0.4em;
     position: relative;
 }
 
@@ -251,4 +262,35 @@ sup{
     padding: 10px;
     border: 1px dashed #bebebe;
     display: block;
+}
+
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th{
+    border-bottom: 1px solid #bebebe;
+    padding: 8px;
+}
+
+table tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #ffffff;
+    background-color: #ef652a;
+}
+
+.basics-table{
+    margin-bottom: 15px;
+}
+
+.basics-table td:first-child{
+    font-weight: bold;
 }
