@@ -238,3 +238,17 @@ sup{
     height: auto;
     padding: 10px;
 }
+
+.basics-tags{
+    background-color: #faebd7;
+    color: #e34f26;
+    border-radius: 5px;
+}
+
+.basics-code{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px dashed #bebebe;
+    display: block;
+}
