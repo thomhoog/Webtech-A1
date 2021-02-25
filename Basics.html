@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Webtech A1</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -18,13 +19,172 @@
             <a class="navlink" href="References.html">References</a>
         </nav>
         <div class="wrapper">
-            <article>
+            <article class="notgallery">
                 <h2>Basics</h2>
                 <section>
+                    <p>
+                        As mentioned on the <a href="Home.html">homepage</a>,
+                        a markup language is a computer language that uses
+                        <strong>tags</strong> to define elements within a
+                        document. HTML is one such language. To start
+                        your journey on website building with HTML, you
+                        need to understand what those tags are, and how to
+                        use them in order to construct a web page.
+                    </p>
+
+                    <h3>Tags</h3>
+                    <p>
+                        Tags are used to mark up the start of an HTML element and 
+                        they are usually enclosed in
+                        <em>angle brackets</em>.<a href="#ref-one"><sup>1</sup></a>
+                        For example: <span class="basics-tags">&lt;article&gt;</span>.
+                        Most tags must be opened <span class="basics-tags">&lt;article&gt;</span>
+                        and closed <span class="basics-tags">&lt;/article&gt;</span> in
+                        order to function. The information of such tags, such as a title,
+                        rests <em>between</em> the opening and closing tags.
+                        It is important to mention that when using multiple tags,
+                        the tags must be closed in the order in which they were 
+                        opened.<a href="#ref-one"><sup>1</sup></a> For example:
+                        <span class="basics-tags">&lt;div&gt;&lt;span&gt;Basics&lt;/span&gt;&lt;/div&gt;</span>
+                    </p>
+                    <p>
+                        Tags can also contain additional pieces of information, called
+                        <strong>attributes</strong>.<a href="#ref-one"><sup>1</sup></a>
+                        These attributes are placed inside opening tags, like so:
+                        <span class="basics-tags">&lt;a href="example.com" target="_blank"&gt;</span>,
+                        where the link's location (href) and where to open the linked
+                        document to (target) are attributes of
+                        the <span class="basics-tags">&lt;a&gt;</span> tag.
+                    </p>
+
+                    <h3>Construction</h3>
+                    <p>
+                        So you have learned what tags are, but that knowledge alone won't
+                        get you very far. What you now need to know, is how to <em>use</em>
+                        tags to build an actual web page. The <em>simplest</em> way
+                        to construct an HTML document goes as follows:
+                    </p>
+                    <p>
+                        <div class="basics-code">
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Page Title&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;Write a heading here.&lt;/h&gt;<br>
+                            &lt;p&gt;Write a paragraph here.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </div>
+                    </p>
+                    <p>
+                        Some tags used in this example <strong>must</strong>
+                        be at the top of every HTML page you create. These tags are:
+                    </p>
+                    <ol>
+                        <li>
+                            <span class="basics-tags">&lt;!DOCTYPE html&gt;</span>,
+                            a declaration that defines this is an HTML5 document
+                        </li>
+                        <li>
+                            <span class="basics-tags">&lt;html&gt;</span>,
+                            which signals where you start writing in HTML
+                        </li>
+                        <li>
+                            <span class="basics-tags">&lt;head&gt;</span>,
+                            which contains all the meta information about
+                            the page<a href="#ref-two"><sup>2</sup></a>
+                            (data mostly meant for search engines and the like)
+                        </li>
+                        <li>
+                            <span class="basics-tags">&lt;body&gt;</span>,
+                            here goes all the content for the page. It is a 
+                            container for all the visible
+                            contents<a href="#ref-two"><sup>2</sup></a>
+                        </li>
+                    </ol>
+                    <p>
+                        Inside the <span class="basics-tags">&lt;head&gt;</span> tag,
+                        there are usually a few other tags that are also always included, such as:
+                    </p>
+                    <ol>
+                        <li>
+                            <span class="basics-tags">&lt;title&gt;</span>, where
+                            the page name is inserted that appears at the top of
+                            the browser window or tab
+                        </li>
+                        <li>
+                            <span class="basics-tags">&lt;meta&gt;</span>, where
+                            information <em>about</em> the document is stored, such as
+                            keywords, a description, et cetera
+                        </li>
+                    </ol>
+                    <p>
+                        As aforementioned, in the <span class="basics-tags">&lt;body&gt;</span>
+                        tag is where all the visible content of the web page goes. This includes
+                        such things as <strong>paragraphs, tables, images</strong> and more. The
+                        table below is an overview of elements that go into the
+                        <span class="basics-tags">&lt;body&gt;</span> tag.
+                    </p>
+
+                    <table class="basics-table">
+                        <tr>
+                            <th>Element</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td> &lt;h1&gt; to &lt;h6&gt; </td>
+                            <td> Headings, used to display titles or subtitles</td>
+                        </tr>
+                        <tr>
+                            <td> &lt;p&gt; </td>
+                            <td> Paragraphs, used for writing text </td>
+                        </tr>
+                        <tr>
+                            <td> &lt;strong&gt; </td>
+                            <td> Bold highlighted text, to show importance </td>
+                        </tr>
+                        <tr>
+                            <td> &lt;em&gt; </td>
+                            <td> Emphasised text, to stress certain texts </td>
+                        </tr>
+                        <tr>
+                            <td> &lt;sub&gt; </td>
+                            <td> Subscript text, like hello<sub>hello</sub> </td>
+                        </tr>
+                        <tr>
+                            <td> &lt;sup&gt; </td>
+                            <td> Supscript text, like hello<sup>hello</sup> </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        This is a non-exhaustive overview, meaning there are more tags
+                        and more wonderful ways to format web pages. If you are interested
+                        in learning more, definitely do check out
+                        <a href="https://html.com/" target="_blank">this website</a>
+                        for a more elaborate explanation on the workings of HTML!
+                    </p>
+
+                    <h3>References</h3>
+                    <p>
+                        For a full list of references used on every page of this
+                        website, <a href="References.html">check out the References
+                            web page.</a>
+                    </p>
+                    <ol class="ref-list">
+                        <li id="ref-one">
+                            <a href="https://html.com/" target="_blank">
+                                HTML For Beginners</a>, HTML.com.
+                        </li>
+                        <li id="ref-two">
+                            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">
+                                HTML Introduction</a>, W3Schools.
+                        </li>
+                    </ol>
                 </section>
             </article>
-            <aside>
-            </aside>
             <footer>
                 <ul class="footerlist">
                     <li><h2>Menu</h2></li>
