@@ -126,7 +126,7 @@ aside{
     height: auto;
 }
 
-.gallery section{
+.gallery div{
     background-color: #ffffff;
     border-radius: 20px;
     width: 80vw;
@@ -136,11 +136,11 @@ aside{
     border: 1px solid #d8d8d8;
 }
 
-.gallery section:hover{
+.gallery div:hover{
     border: 1px solid #9e9e9e;
 }
 
-.gallery section{
+.gallery div{
     transition: border 350ms;
 }
 
@@ -305,7 +305,7 @@ table th{
         justify-content: space-evenly;
     }
     
-    .gallery section{  
+    .gallery div{  
         display: flex;
         flex-direction: column;
         width: 40%;
