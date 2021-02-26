@@ -240,6 +240,7 @@ sub{
     padding: 10px;
     border: 1px dashed #bebebe;
     display: block;
+    margin-bottom: 15px;
 }
 
 table{
@@ -273,7 +274,7 @@ table th{
     font-weight: bold;
 }
 
-@media only screen and (min-device-width: 1024px){
+@media only screen and (min-width: 1024px){
     .logo{
         height: 70px;
         width: 70px;
@@ -282,7 +283,7 @@ table th{
     }
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
     aside{
         float: right;
         width: 35%;
